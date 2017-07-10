@@ -25,7 +25,6 @@ open class YNSearchViewController: UIViewController, UITextFieldDelegate {
 
     override open func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     open func ynSearchinit() {
@@ -49,7 +48,6 @@ open class YNSearchViewController: UIViewController, UITextFieldDelegate {
     open func initData(database: [Any]) {
         self.ynSearchView.ynSearchListView.initData(database: database)
     }
-
     
     // MARK: - YNSearchTextfield
     open func ynSearchTextfieldcancelButtonClicked() {

@@ -67,7 +67,7 @@ open class YNSearchMainView: UIView {
     
     open func initView(categories: [String]) {
         self.categoryLabel = UILabel(frame: CGRect(x: margin, y: 0, width: width - 40, height: 50))
-        self.categoryLabel.text = "Categories"
+        self.categoryLabel.text = "Featured Cities"
         self.categoryLabel.font = UIFont.systemFont(ofSize: 13)
         self.categoryLabel.textColor = UIColor.darkGray
         self.addSubview(self.categoryLabel)
