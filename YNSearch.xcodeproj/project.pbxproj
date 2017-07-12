@@ -22,40 +22,7 @@
 		19FE32141EA7B67900A4DB5E /* YNSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE32081EA7B67900A4DB5E /* YNSearchTextField.swift */; };
 		19FE32151EA7B67900A4DB5E /* YNSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE32091EA7B67900A4DB5E /* YNSearchView.swift */; };
 		19FE32161EA7B67900A4DB5E /* YNSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE320A1EA7B67900A4DB5E /* YNSearchViewController.swift */; };
-		19FE321E1EA7B77C00A4DB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE321D1EA7B77C00A4DB5E /* AppDelegate.swift */; };
-		19FE32201EA7B77C00A4DB5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE321F1EA7B77C00A4DB5E /* ViewController.swift */; };
-		19FE32231EA7B77C00A4DB5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FE32211EA7B77C00A4DB5E /* Main.storyboard */; };
-		19FE32251EA7B77C00A4DB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FE32241EA7B77C00A4DB5E /* Assets.xcassets */; };
-		19FE323D1EA7B8D800A4DB5E /* YNSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D22E2E1EA7A8F6006DF0AC /* YNSearch.framework */; };
-		19FE32461EA7B93100A4DB5E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19FE32401EA7B93100A4DB5E /* LaunchScreen.xib */; };
-		19FE32471EA7B93100A4DB5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FE32421EA7B93100A4DB5E /* Main.storyboard */; };
-		19FE32481EA7B93100A4DB5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE32441EA7B93100A4DB5E /* DetailViewController.swift */; };
-		19FE324A1EA7BABA00A4DB5E /* YNSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19D22E2E1EA7A8F6006DF0AC /* YNSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		19FE324B1EA7BABA00A4DB5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 19D22E251EA7A8F6006DF0AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19D22E2D1EA7A8F6006DF0AC;
-			remoteInfo = YNSearch;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		19FE324D1EA7BABA00A4DB5E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				19FE324A1EA7BABA00A4DB5E /* YNSearch.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		196636CD1EA90C2300EE1F43 /* YNSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSearchModel.swift; sourceTree = "<group>"; };
@@ -75,15 +42,6 @@
 		19FE32081EA7B67900A4DB5E /* YNSearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSearchTextField.swift; sourceTree = "<group>"; };
 		19FE32091EA7B67900A4DB5E /* YNSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSearchView.swift; sourceTree = "<group>"; };
 		19FE320A1EA7B67900A4DB5E /* YNSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSearchViewController.swift; sourceTree = "<group>"; };
-		19FE321B1EA7B77C00A4DB5E /* YNSearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YNSearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		19FE321D1EA7B77C00A4DB5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19FE321F1EA7B77C00A4DB5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		19FE32221EA7B77C00A4DB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		19FE32241EA7B77C00A4DB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		19FE32291EA7B77C00A4DB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19FE32411EA7B93100A4DB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		19FE32431EA7B93100A4DB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		19FE32441EA7B93100A4DB5E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,14 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19FE32181EA7B77C00A4DB5E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19FE323D1EA7B8D800A4DB5E /* YNSearch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				19D22E301EA7A8F6006DF0AC /* YNSearch */,
-				19FE321C1EA7B77C00A4DB5E /* YNSearchDemo */,
 				19D22E2F1EA7A8F6006DF0AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				19D22E2E1EA7A8F6006DF0AC /* YNSearch.framework */,
-				19FE321B1EA7B77C00A4DB5E /* YNSearchDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,29 +92,6 @@
 				19D22E321EA7A8F6006DF0AC /* Info.plist */,
 			);
 			path = YNSearch;
-			sourceTree = "<group>";
-		};
-		19FE321C1EA7B77C00A4DB5E /* YNSearchDemo */ = {
-			isa = PBXGroup;
-			children = (
-				19FE321F1EA7B77C00A4DB5E /* ViewController.swift */,
-				19FE32441EA7B93100A4DB5E /* DetailViewController.swift */,
-				19FE321D1EA7B77C00A4DB5E /* AppDelegate.swift */,
-				19FE32211EA7B77C00A4DB5E /* Main.storyboard */,
-				19FE32241EA7B77C00A4DB5E /* Assets.xcassets */,
-				19FE323F1EA7B93100A4DB5E /* Base.lproj */,
-				19FE32291EA7B77C00A4DB5E /* Info.plist */,
-			);
-			path = YNSearchDemo;
-			sourceTree = "<group>";
-		};
-		19FE323F1EA7B93100A4DB5E /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				19FE32401EA7B93100A4DB5E /* LaunchScreen.xib */,
-				19FE32421EA7B93100A4DB5E /* Main.storyboard */,
-			);
-			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,25 +126,6 @@
 			productReference = 19D22E2E1EA7A8F6006DF0AC /* YNSearch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		19FE321A1EA7B77C00A4DB5E /* YNSearchDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 19FE322A1EA7B77C00A4DB5E /* Build configuration list for PBXNativeTarget "YNSearchDemo" */;
-			buildPhases = (
-				19FE32171EA7B77C00A4DB5E /* Sources */,
-				19FE32181EA7B77C00A4DB5E /* Frameworks */,
-				19FE32191EA7B77C00A4DB5E /* Resources */,
-				19FE324D1EA7BABA00A4DB5E /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				19FE324C1EA7BABA00A4DB5E /* PBXTargetDependency */,
-			);
-			name = YNSearchDemo;
-			productName = YNSearchDemo;
-			productReference = 19FE321B1EA7B77C00A4DB5E /* YNSearchDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,11 +140,6 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = WEHN288N9X;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
-					};
-					19FE321A1EA7B77C00A4DB5E = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 4G7K3CN2JU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -257,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				19D22E2D1EA7A8F6006DF0AC /* YNSearch */,
-				19FE321A1EA7B77C00A4DB5E /* YNSearchDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -268,17 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19FE320D1EA7B67900A4DB5E /* YNSearch.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19FE32191EA7B77C00A4DB5E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19FE32461EA7B93100A4DB5E /* LaunchScreen.xib in Resources */,
-				19FE32251EA7B77C00A4DB5E /* Assets.xcassets in Resources */,
-				19FE32471EA7B93100A4DB5E /* Main.storyboard in Resources */,
-				19FE32231EA7B77C00A4DB5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,52 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19FE32171EA7B77C00A4DB5E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19FE32481EA7B93100A4DB5E /* DetailViewController.swift in Sources */,
-				19FE32201EA7B77C00A4DB5E /* ViewController.swift in Sources */,
-				19FE321E1EA7B77C00A4DB5E /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		19FE324C1EA7BABA00A4DB5E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 19D22E2D1EA7A8F6006DF0AC /* YNSearch */;
-			targetProxy = 19FE324B1EA7BABA00A4DB5E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		19FE32211EA7B77C00A4DB5E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19FE32221EA7B77C00A4DB5E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		19FE32401EA7B93100A4DB5E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19FE32411EA7B93100A4DB5E /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		19FE32421EA7B93100A4DB5E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19FE32431EA7B93100A4DB5E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		19D22E341EA7A8F6006DF0AC /* Debug */ = {
@@ -497,34 +341,6 @@
 			};
 			name = Release;
 		};
-		19FE322B1EA7B77C00A4DB5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4G7K3CN2JU;
-				INFOPLIST_FILE = YNSearchDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.YNSearchDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		19FE322C1EA7B77C00A4DB5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4G7K3CN2JU;
-				INFOPLIST_FILE = YNSearchDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.YNSearchDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -542,15 +358,6 @@
 			buildConfigurations = (
 				19D22E371EA7A8F6006DF0AC /* Debug */,
 				19D22E381EA7A8F6006DF0AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		19FE322A1EA7B77C00A4DB5E /* Build configuration list for PBXNativeTarget "YNSearchDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				19FE322B1EA7B77C00A4DB5E /* Debug */,
-				19FE322C1EA7B77C00A4DB5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
