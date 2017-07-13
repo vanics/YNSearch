@@ -80,6 +80,8 @@ open class YNSearchViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    
+    
     open func textFieldDidBeginEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.3, animations: {
             self.ynSearchView.ynSearchMainView.alpha = 0

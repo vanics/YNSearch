@@ -8,10 +8,11 @@
 
 import UIKit
 
-open class YNSearchMainView: UIView {
+public class YNSearchMainView: UIView {
     let width = UIScreen.main.bounds.width
     let height = UIScreen.main.bounds.height
 
+    open var defaultOptionLabel: UILabel!
     open var categoryLabel: UILabel!
     open var ynCategoryButtons = [YNCategoryButton]()
     
@@ -50,6 +51,10 @@ open class YNSearchMainView: UIView {
         self.delegate?.ynCategoryButtonClicked(text: text)
     }
     
+    open func ynSearchDefaultOptionButtonClicked(_ sender: YNSearchDefaultOptionButton) {
+        self.delegate?.ynSearchHistoryButtonClicked(text: sender.textLabel.text ?? "")
+    }
+    
     open func ynSearchHistoryButtonClicked(_ sender: UIButton) {
         guard let text = ynSearchHistoryButtons[sender.tag].textLabel.text else { return }
         self.delegate?.ynSearchHistoryButtonClicked(text: text)
@@ -66,7 +71,9 @@ open class YNSearchMainView: UIView {
     }
     
     open func initView(categories: [String]) {
-        self.categoryLabel = UILabel(frame: CGRect(x: margin, y: 0, width: width - 40, height: 50))
+        drawDefaultButton()
+        
+        self.categoryLabel = UILabel(frame: CGRect(x: margin, y: 40, width: width - 40, height: 50))
         self.categoryLabel.text = "Featured Cities"
         self.categoryLabel.font = UIFont.systemFont(ofSize: 13)
         self.categoryLabel.textColor = UIColor.darkGray
@@ -76,7 +83,7 @@ open class YNSearchMainView: UIView {
         let userAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName: UIColor.gray]
         
         var formerWidth: CGFloat = margin
-        var formerHeight: CGFloat = 50
+        var formerHeight: CGFloat = 40+50
         
         for i in 0..<categories.count {
             let size = categories[i].size(attributes: userAttributes)
@@ -102,7 +109,16 @@ open class YNSearchMainView: UIView {
         self.searchHistoryLabel.font = UIFont.systemFont(ofSize: 13)
         self.searchHistoryLabel.textColor = UIColor.darkGray
         self.addSubview(self.searchHistoryLabel)
-        
+    }
+    
+    open func drawDefaultButton() {
+        let view = YNSearchDefaultOptionView (frame: CGRect(x: margin, y: 0, width: width - (margin * 2), height: 40))
+        view.ynSearchDefaultOptionButton.addTarget(self, action: #selector(ynSearchDefaultOptionButtonClicked(_:)), for: .touchUpInside)
+        view.ynSearchDefaultOptionButton.textLabel.text = "Current Location"
+        //view.ynSearchDefaultOptionButton.textLabel.textColor = UIColor.red
+        view.ynSearchDefaultOptionButton.tintColor = UIColor.red
+        view.ynSearchDefaultOptionButton.tag = 9999
+        self.addSubview(view)
     }
     
     open func redrawSearchHistoryButtons() {
@@ -136,7 +152,7 @@ open class YNSearchMainView: UIView {
         guard let lastHistoryView = self.ynSearchHistoryViews.last else { return }
         
         self.clearHistoryButton = UIButton(frame: CGRect(x: margin, y: lastHistoryView.frame.origin.y + lastHistoryView.frame.height, width: width - (margin * 2), height: 40))
-        self.clearHistoryButton.setTitle("Clear serach history", for: .normal)
+        self.clearHistoryButton.setTitle("Clear search history", for: .normal)
         self.clearHistoryButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         self.clearHistoryButton.setTitleColor(UIColor.darkGray, for: .normal)
         self.clearHistoryButton.setTitleColor(UIColor.lightGray, for: .highlighted)

@@ -22,6 +22,7 @@
 		19FE32141EA7B67900A4DB5E /* YNSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE32081EA7B67900A4DB5E /* YNSearchTextField.swift */; };
 		19FE32151EA7B67900A4DB5E /* YNSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE32091EA7B67900A4DB5E /* YNSearchView.swift */; };
 		19FE32161EA7B67900A4DB5E /* YNSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE320A1EA7B67900A4DB5E /* YNSearchViewController.swift */; };
+		202DFC141F16CF61001A5F13 /* YNSearchDefaultOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202DFC131F16CF61001A5F13 /* YNSearchDefaultOptionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		19FE32081EA7B67900A4DB5E /* YNSearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSearchTextField.swift; sourceTree = "<group>"; };
 		19FE32091EA7B67900A4DB5E /* YNSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSearchView.swift; sourceTree = "<group>"; };
 		19FE320A1EA7B67900A4DB5E /* YNSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSearchViewController.swift; sourceTree = "<group>"; };
+		202DFC131F16CF61001A5F13 /* YNSearchDefaultOptionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSearchDefaultOptionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				19FE32021EA7B67900A4DB5E /* YNSearchDelegate.swift */,
 				19FE32031EA7B67900A4DB5E /* YNSearchExtension.swift */,
 				19FE32041EA7B67900A4DB5E /* YNSearchHistoryButton.swift */,
+				202DFC131F16CF61001A5F13 /* YNSearchDefaultOptionButton.swift */,
 				19FE32051EA7B67900A4DB5E /* YNSearchListView.swift */,
 				19FE32061EA7B67900A4DB5E /* YNSearchListViewCell.swift */,
 				19FE32071EA7B67900A4DB5E /* YNSearchMainView.swift */,
@@ -183,6 +186,7 @@
 				19FE32151EA7B67900A4DB5E /* YNSearchView.swift in Sources */,
 				19FE320E1EA7B67900A4DB5E /* YNSearchDelegate.swift in Sources */,
 				196636CE1EA90C2300EE1F43 /* YNSearchModel.swift in Sources */,
+				202DFC141F16CF61001A5F13 /* YNSearchDefaultOptionButton.swift in Sources */,
 				19972B501EADD45300931216 /* Objectification.swift in Sources */,
 				19FE320C1EA7B67900A4DB5E /* YNSearch.swift in Sources */,
 				19FE32101EA7B67900A4DB5E /* YNSearchHistoryButton.swift in Sources */,

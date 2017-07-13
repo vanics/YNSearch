@@ -8,8 +8,8 @@
 
 import UIKit
 
-open class YNSearchTextField: UITextField {
-    override init(frame: CGRect) {
+public class YNSearchTextField: UITextField {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         self.initView()
@@ -30,16 +30,15 @@ open class YNSearchTextField: UITextField {
         
         self.leftView = searchImageViewWrapper
         self.returnKeyType = .search
-        self.placeholder = "Search libraries what you want"
         self.font = UIFont.systemFont(ofSize: 14)
     }
 }
 
-open class YNSearchTextFieldView: UIView {
+public class YNSearchTextFieldView: UIView {
     open var ynSearchTextField: YNSearchTextField!
     open var cancelButton: UIButton!
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         self.initView()
@@ -47,6 +46,10 @@ open class YNSearchTextFieldView: UIView {
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    public func setPlaceholder(_ placeholder: String) {
+        ynSearchTextField.placeholder = placeholder
     }
     
     open func initView() {

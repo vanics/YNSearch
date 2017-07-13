@@ -8,14 +8,14 @@
 
 import UIKit
 
-open class YNSearchView: UIView, YNSearchMainViewDelegate, YNSearchListViewDelegate {
+public class YNSearchView: UIView, YNSearchMainViewDelegate, YNSearchListViewDelegate {
     open var delegate: YNSearchDelegate?
     
     open var ynScrollView: UIScrollView!
     open var ynSearchMainView: YNSearchMainView!
     open var ynSearchListView: YNSearchListView!
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         self.ynScrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
