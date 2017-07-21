@@ -53,10 +53,10 @@ public class YNSearchTextFieldView: UIView {
     }
     
     open func initView() {
-        self.ynSearchTextField = YNSearchTextField(frame: CGRect(x: 0, y: 0, width: self.frame.width - 50, height: self.frame.height))
+        self.ynSearchTextField = YNSearchTextField(frame: CGRect(x: 20, y: 0, width: self.frame.width - 70, height: self.frame.height))
         self.addSubview(self.ynSearchTextField)
         
-        self.cancelButton = UIButton(frame: CGRect(x: self.frame.width - 40, y: 0, width: 50, height: self.frame.height))
+        self.cancelButton = UIButton(frame: CGRect(x: self.frame.width - 50, y: 0, width: 50, height: self.frame.height))
         self.cancelButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         self.cancelButton.setTitleColor(UIColor.darkGray, for: .normal)
         self.cancelButton.setTitleColor(UIColor.darkGray.withAlphaComponent(0.3), for: .highlighted)

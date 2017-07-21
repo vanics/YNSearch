@@ -21,10 +21,11 @@ open class YNCategoryButton: UIButton {
             self.setType(type: _type)
         }
     }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.initVIew()
+        self.initView()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -64,7 +65,7 @@ open class YNCategoryButton: UIButton {
             }
         }
     }
-    open func initVIew() {
+    open func initView() {
         self.layer.borderColor = UIColor.darkGray.cgColor
         self.layer.borderWidth = 1
         self.titleLabel?.font = UIFont.systemFont(ofSize: 12)
@@ -102,8 +103,11 @@ open class YNCategoryButton: UIButton {
     open func randomColor() -> UIColor {
         let colorArray = ["009999", "0099cc", "0099ff", "00cc99", "00cccc", "336699", "3366cc", "3366ff", "339966", "666666", "666699", "6666cc", "6666ff", "996666", "996699", "999900", "999933", "99cc00", "99cc33", "660066", "669933", "990066", "cc9900", "cc6600" , "cc3300", "cc3366", "cc6666", "cc6699", "cc0066", "cc0033", "ffcc00", "ffcc33", "ff9900", "ff9933", "ff6600", "ff6633", "ff6666", "ff6699", "ff3366", "ff3333"]
         
-        let randomNumber = arc4random_uniform(UInt32(colorArray.count))
-        return UIColor(hexString: colorArray[Int(randomNumber)])
+        let semiRandom = abs(self.title(for: .normal)?.hashValue ?? 1) % colorArray.count
+        print(semiRandom)
+
+        //let randomNumber = arc4random_uniform(UInt32(colorArray.count))
+        return UIColor(hexString: colorArray[semiRandom])
     }
     
 
