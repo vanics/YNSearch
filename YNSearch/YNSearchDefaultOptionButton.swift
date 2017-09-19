@@ -27,7 +27,7 @@ open class YNSearchDefaultOptionView: UIView {
         self.addSubview(ynSearchDefaultOptionButton)
         
         self.bottomLine = UIView(frame: CGRect(x: 0, y: self.frame.height-1, width: self.frame.width, height: 1))
-        self.bottomLine.backgroundColor = UIColor.init(colorLiteralRed: 242/255, green: 242/255, blue: 242/255, alpha: 1)
+        self.bottomLine.backgroundColor = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1)
         self.addSubview(bottomLine)
         
     }
